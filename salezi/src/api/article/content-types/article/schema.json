@@ -44,6 +44,17 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaction.transaction",
+      "mappedBy": "transaction"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0,
+      "required": true
     }
   }
 }
