@@ -1,7 +1,7 @@
 # Salezi - API Backend Project
 
 ## Overview
-Salezi is a backend API project designed to manage stocks and sales for FNAC's partner sellers. Built using Strapi and SQLite, it ensures secure, efficient, and role-based management of product inventories and transactions. This Minimum Viable Product (MVP) focuses solely on back-office functionality.
+Salezi is a backend API project designed to manage stocks and sales for FNAC's partner sellers. Built using Strapi, it ensures secure, efficient, and role-based management of product inventories and transactions. This Minimum Viable Product (MVP) focuses solely on back-office functionality.
 
 ---
 
