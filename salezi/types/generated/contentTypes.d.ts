@@ -429,6 +429,12 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     quantity: Schema.Attribute.Integer &
       Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      > &
       Schema.Attribute.DefaultTo<0>;
     seller: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
     slug: Schema.Attribute.UID<'title'>;
