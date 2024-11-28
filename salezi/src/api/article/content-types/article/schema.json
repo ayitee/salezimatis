@@ -45,7 +45,7 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "products": {
+    "transaction": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::transaction.transaction",
@@ -55,6 +55,9 @@
       "type": "integer",
       "default": 0,
       "required": true
+    },
+    "Price": {
+      "type": "integer"
     }
   }
 }

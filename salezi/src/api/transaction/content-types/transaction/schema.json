@@ -51,12 +51,6 @@
       "default": 1,
       "min": 1
     },
-    "transaction": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::article.article",
-      "inversedBy": "products"
-    },
     "seller": {
       "type": "relation",
       "relation": "manyToOne",
@@ -78,6 +72,12 @@
       ],
       "required": true,
       "default": "in progress"
+    },
+    "transaction": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::article.article",
+      "inversedBy": "transaction"
     }
   }
 }

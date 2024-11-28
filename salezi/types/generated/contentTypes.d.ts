@@ -425,10 +425,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'api::article.article'
     > &
       Schema.Attribute.Private;
-    products: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::transaction.transaction'
-    >;
+    Price: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     quantity: Schema.Attribute.Integer &
       Schema.Attribute.Required &
@@ -436,6 +433,10 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     seller: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
+    transaction: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::transaction.transaction'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
